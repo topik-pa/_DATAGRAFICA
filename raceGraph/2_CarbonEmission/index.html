@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Graph v1.0</title>
+
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<link rel="stylesheet" type="text/css" href="./custom.css">
+
+<body style="font-family: monospace;">
+  <h1>Human-caused Greenhouse Gas (GHG) by Country / Tons per capita</h1>
+  <div id="observablehq-viewof-replay-ef00acd6"></div>
+  <div id="observablehq-chart-ef00acd6"></div>
+  <div id="slider">
+
+    <div class="hide slide slide_1990">
+      <h2 class="year">1990</h2>
+      <div>
+        <h3>IPCC first Climate Change Report<br><small>https://www.ipcc.ch</small></h3>
+        <img src="img2.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_1992">
+      <h2 class="year">1992</h2>
+      <div>
+        <h3>United Nations Framework Convention on Climate Change<br><small>https://unfccc.int/process/the-convention/history-of-the-convention</small></h3>
+        <img src="img1.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_1997">
+      <h2 class="year">1997</h2>
+      <div>
+        <h3>Kyoto Protocol<br><small>https://unfccc.int/kyoto_protocol</small></h3>
+        <div>
+          <img src="img3.jpg" height="190"/>
+          <span class="credit">Image credit: Karsten Würth/Unsplash</span>
+        </div>
+      </div>
+    </div>
+    <div class="hide slide slide_2004">
+      <h2 class="year">2004</h2>
+      <div>
+        <h3>Russia and Canada join Kyoto Protocol</h3>
+        <img src="img6.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2008">
+      <h2 class="year">2008</h2>
+      <div>
+        <h3>Kyoto Protocol first commitment period start</h3>
+        <img src="bg2.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2011">
+      <h2 class="year">2011</h2>
+      <div>
+        <h3>Canada left Kyoto Protocol</h3>
+        <img src="img7.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2012">
+      <h2 class="year">2012</h2>
+      <div>
+        <h3>Kyoto Protocol first commitment period end</h3>
+        <img src="bg2.png" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2015">
+      <h2 class="year">2015</h2>
+      <div>
+        <h3>Paris Agreement<br><small>https://unfccc.int/process-and-meetings/the-paris-agreement</small></h3>
+        <img src="img4.jpg" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2013">
+      <h2 class="year">2013</h2>
+      <div>
+        <h3>Doha Amendment period start</h3>
+        <img src="img5.jpg" height="190"/>
+      </div>
+    </div>
+    <div class="hide slide slide_2020">
+      <h2 class="year">2020</h2>
+      <div>
+        <h3>Doha Amendment period end</h3>
+        <img src="bg2.png" height="190"/>
+      </div>
+    </div>
+    
+  </div>
+  <p class="copy">
+    Code customization based on <a href="https://observablehq.com">observablehq.com</a><br>
+  </p>
+  
+  <script type="module">
+  import {Runtime, Inspector} from "./runtime.js";
+  import define from "./b989ceb5d54c3a0c@3096.js?v=3";
+  new Runtime().module(define, name => {
+    if (name === "viewof replay") return new Inspector(document.querySelector("#observablehq-viewof-replay-ef00acd6"));
+    if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-ef00acd6"));
+  });
+  </script>
+</body>
+

@@ -1,0 +1,14 @@
+{
+  "name": "b989ceb5d54c3a0c",
+  "main": "b989ceb5d54c3a0c@3096.js",
+  "version": "3096.0.0",
+  "homepage": "https://observablehq.com/d/b989ceb5d54c3a0c",
+  "author": {
+    "name": "Marco Pavan's Workspace",
+    "url": "https://observablehq.com/@marco-pavan-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
