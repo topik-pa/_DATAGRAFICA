@@ -1,0 +1,424 @@
+:root {
+  --primary-color: #efefef;
+  --secondary-color: #002266;
+  --header-height: 3rem
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  margin: 5rem;
+}
+
+em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(-30deg, rgb(255, 255, 255) 0%, rgb(17, 0, 255) 100%);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 2280px;
+  font-family: sans-serif;
+  position: relative;
+  color: #DDD;
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#logo img {
+  width: 5.5%;
+  margin: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid #DDD;
+  padding: 2px;
+}
+#logo span {
+  font-size: 2.8rem;
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.wrapper {
+  background: #FFF;
+  color: #333;
+  width: 90%;
+  margin: 2% auto 0;
+  height: 91%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+.wrapper::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/bg1.png');
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: -446px 97%;
+  opacity: .2;
+  position: absolute;
+}
+/*.wrapper::after {
+  content: attr(data-years);
+    display: block;
+    opacity: .5;
+    position: absolute;
+    right: 4%;
+    bottom: 2%;
+    font-size: 2.5rem;
+    background: #FFF;
+    border: 1px solid #333;
+    padding: .4rem;
+}*/
+
+section {
+  padding: 2rem 0 0;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+h1 em {
+  text-shadow: 0px 2px 3px #da3969;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+.source {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  color: #666;
+}
+
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  color: #333;
+  text-shadow: 0 0 #FFF;
+}
+.follow img { 
+  height: 3.2rem;
+  margin-left: .3rem;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 10px;
+  border-right: 1px dashed #CCC;
+}
+.year {
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: #666;
+}
+.charts {
+  width: 100%;
+}
+.chart {
+  position: relative;
+  margin: 1px 0;
+  height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: right;
+  border-radius: .5rem;
+  color: #FFF;
+  text-shadow: 0 0 #000;
+  border: 1px solid #333;
+}
+.chart:before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  display: inline-block;
+  background-color: #FFF;
+  position: absolute;
+  left: -1rem;
+  border-radius: 50%;
+  padding: 0px;
+  border: 1px solid #333;
+  top: -1px;
+  background-position: 50%;
+}
+.woman {
+  background-color: #da3969;
+}
+.woman:before {
+  background-image: url('img/female.png');
+}
+.man {
+  background-color: #062c77;
+}
+.man:before {
+  background-image: url('img/male.png');
+}
+
+.event {
+  text-align: center;
+  margin-bottom: 10px;
+  height: 55px;
+  font-style: italic;
+  color: #333;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.event .inner {
+  border-bottom: 1px dotted #333;
+  background-color: rgba(255,255,0, 0.4);
+  padding: 5px 0;
+  width: 100%;
+}
+.event span {
+  font-weight: bold;
+  font-style: initial;
+}
+
+.y1992 .man {
+  width: 98.75%;
+}
+.y1992 .woman {
+  width: 16%;
+}
+
+.y1993 .man {
+  width: 73%;
+}
+.y1993 .woman {
+  width: 15.5%;
+}
+
+.y1994 .man {
+  width: 68.75%;
+}
+.y1994 .woman {
+  width: 12.5%;
+}
+
+.y1995 .man {
+  width: 62.75%;
+}
+.y1995 .woman {
+  width: 14.5%;
+}
+
+.y1996 .man {
+  width: 58.5%;
+}
+.y1996 .woman {
+  width: 16.25%;
+}
+
+.y1997 .man {
+  width: 50.75%;
+}
+.y1997 .woman {
+  width: 13.5%;
+}
+
+.y1998 .man {
+  width: 51.75%;
+}
+.y1998 .woman {
+  width: 13.75%;
+}
+
+.y1999 .man {
+  width: 49.75%;
+}
+.y1999 .woman {
+  width: 13.25%;
+}
+
+.y2000 .man {
+  width: 40.75%;
+}
+.y2000 .woman {
+  width: 12.75%;
+}
+
+.y2001 .man {
+  width: 38%;
+}
+.y2001 .woman {
+  width: 11.25%;
+}
+
+.y2002 .man {
+  width: 36.25%;
+}
+.y2002 .woman {
+  width: 13.5%;
+}
+
+.y2003 .man {
+  width: 42.25%;
+}
+.y2003 .woman {
+  width: 15%;
+}
+
+.y2004 .man {
+  width: 41.75%;
+}
+.y2004 .woman {
+  width: 12.75%;
+}
+
+.y2005 .man {
+  width: 36.75%;
+}
+.y2005 .woman {
+  width: 10.5%;
+}
+
+.y2006 .man {
+  width: 33.75%;
+}
+.y2006 .woman {
+  width: 12.75%;
+}
+
+.y2007 .man {
+  width: 37%;
+}
+.y2007 .woman {
+  width: 11.75%;
+}
+
+.y2008 .man {
+  width: 33.75%;
+}
+.y2008 .woman {
+  width: 10.5%;
+}
+
+.y2009 .man {
+  width: 31.25%;
+}
+.y2009 .woman {
+  width: 12.5%;
+}
+
+.y2010 .man {
+  width: 29.25%;
+}
+.y2010 .woman {
+  width: 10.75%;
+}
+
+.y2011 .man {
+  width: 28.75%;
+}
+.y2011 .woman {
+  width: 10%;
+}
+
+.y2012 .man {
+  width: 29%;
+}
+.y2012 .woman {
+  width: 10.75%;
+}
+
+.y2013 .man {
+  width: 23.75%;
+}
+.y2013 .woman {
+  width: 11.75%;
+}
+
+.y2014 .man {
+  width: 22%;
+}
+.y2014 .woman {
+  width: 9.5%;
+}
+
+.y2015 .man {
+  width: 24%;
+}
+.y2015 .woman {
+  width: 9%;
+}
+
+.y2016 .man {
+  width: 20%;
+}
+.y2016 .woman {
+  width: 10.25%;
+}
+
+.y2017 .man {
+  width: 19%;
+}
+.y2017 .woman {
+  width: 9%;
+}
+
+.y2018 .man {
+  width: 17.25%;
+}
+.y2018 .woman {
+  width: 9%;
+}
+
+.y2019 .man {
+  width: 14%;
+}
+.y2019 .woman {
+  width: 7.5%;
+}
+
+.y2020 .man {
+  width: 11.5%;
+}
+.y2020 .woman {
+  width: 7.25%;
+}
+
+.y2021 .man {
+  width: 16%;
+}
+.y2021 .woman {
+  width: 9.75%;
+}

@@ -1,0 +1,217 @@
+@import 'icons.css';
+
+:root {
+  --black: #333333;
+  --white: #FFFFFF;
+  --gray: #999999;
+  --blue: #5180df;
+  --red: #dd2e2e;
+  --orange: #eb8f39;
+  --green: #3b6936;
+  --padding-small: .3rem;
+  --padding-medium: .7rem;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--black);
+}
+
+small {
+  display: block;
+  font-size: 70%;
+  font-weight: normal;
+}
+
+em {
+  font-weight: 500;
+}
+h1 em {
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+h1 {
+  margin-top: 0;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: var(--padding-small) var(--padding-medium);
+  text-shadow: 0px 1px var(--black);
+  /*color: var(--orange);*/
+}
+h1 small {
+  font-style: italic;
+}
+h2 {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: var(--padding-small) var(--padding-medium);
+  width: 75%;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-shadow: 0px 1px var(--black);
+}
+h3 {
+  padding: var(--padding-small) var(--padding-medium);
+  border-bottom: 1px solid var(--gray);
+  font-style: italic;
+}
+
+#right h2 {
+  width: auto;
+  background-color: var(--orange);
+}
+#right p, #right div, #right h3 {
+  text-align: right;
+}
+#right p {
+  padding-right: var(--padding-medium);
+}
+
+main {
+  display: flex;
+}
+#left {
+  width: 67%;
+}
+#right {
+  width: 33%;
+}
+
+img#nantxl {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+p#desc {
+  width: 80%;
+  font-size: 95%;
+  text-align: justify;
+  background-color: #F5F5F5;
+  padding: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--gray);
+}
+
+.round {
+  font-family: 'Orbitron', sans-serif;
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 75%;
+}
+.round.small {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid var(--orange);
+}
+
+#quality, #offer, #standards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  font-style: italic;
+}
+footer span[class] {
+  display: block;
+  font-size: 2.1rem;
+  color: var(--blue);
+  text-shadow: 0 0 var(--black);
+}
+
+#standards {
+  flex-wrap: wrap;
+}
+#standards img {
+  width: 6rem;
+  margin-bottom: .5rem;
+}
+#standards div {
+  width: 33%;
+}
+
+.icon {
+  position: relative;
+  line-height: 1.2rem;
+}
+.icon::before {
+ content: '';
+ width: 1.7rem;
+ height: 1.7rem;
+ display: block;
+ position: absolute;
+ left: -2rem;
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.icon.html::before {
+  background-image: url('img/html.jpg');
+}
+.icon.css::before {
+  background-image: url('img/css.jpg');
+}
+.icon.js::before {
+  background-image: url('img/js.jpg');
+}
+.icon.angular::before {
+  background-image: url('img/angular.png');
+}
+.icon.node::before {
+  background-image: url('img/node.png');
+}
+.icon.react::before {
+  background-image: url('img/react.png');
+}
+.icon.vue::before {
+  background-image: url('img/vue.png');
+}
+
+.techs {
+  font-style: italic;
+}
+
+#time {
+  margin-top: 3rem;
+  text-align: center!important;
+  color: var(--gray);
+  padding-right: var(--padding-medium);
+}
+.times {
+  font-size: 75%;
+  text-align: center!important;
+  margin-top: .4rem;
+}
+.icon-earth {
+  text-align: center!important;
+  font-size: 4rem;
+  color: var(--gray);
+  margin-bottom: .7rem;
+}
