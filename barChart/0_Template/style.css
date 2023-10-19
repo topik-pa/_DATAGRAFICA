@@ -24,6 +24,8 @@ body {
   background-image: url('/imgs/bg1.jpeg');
   background-position: 50% 0%;
   background-size: 100% 139%;
+
+  overflow-x: hidden;
 }
 main::before {
   content: ' ';
@@ -33,7 +35,7 @@ main::before {
   background-image: url('./img/bg1.png');
   background-repeat: no-repeat;
   background-size: 60%;
-  background-position: 95% 47%;
+  background-position: 70% 6%;
   opacity: .1;
   position: absolute;
 }
