@@ -46,3 +46,40 @@
 .icon-linkedin2:before {
   content: "\eaca";
 }
+
+
+.icon {
+  position: relative;
+  line-height: 1.2rem;
+}
+.icon::before {
+ content: '';
+ width: 1.7rem;
+ height: 1.7rem;
+ display: block;
+ position: absolute;
+ left: -2rem;
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.icon.html::before {
+  background-image: url('img/html.jpg');
+}
+.icon.css::before {
+  background-image: url('img/css.jpg');
+}
+.icon.js::before {
+  background-image: url('img/js.jpg');
+}
+.icon.angular::before {
+  background-image: url('img/angular.png');
+}
+.icon.node::before {
+  background-image: url('img/node.png');
+}
+.icon.react::before {
+  background-image: url('img/react.png');
+}
+.icon.vue::before {
+  background-image: url('img/vue.png');
+}
