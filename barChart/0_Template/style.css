@@ -1,7 +1,7 @@
 @import 'icons.css';
 
 :root {
-  --black: #333333;
+  --black: #222222;
   --white: #EEEEEE;
   --gray: #777777;
   --blue: #5180df;
@@ -17,7 +17,7 @@
   --font-size-bigger: 3rem;
   --font-size-big: 1.4rem;
   --font-size-small: .75rem;
-  --first-color: #062c77;
+  --first-color: #db700c;
   --second-color: #da3969;
 }
 
@@ -66,6 +66,10 @@ li {
   margin: var(--large) 0;
 }
 
+a {
+  color: inherit;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -96,6 +100,7 @@ header .source {
   border-top: 1px solid var(--gray);
   height: var(--footer-height);
   text-shadow: 0 1px var(--gray);
+  font-size: var(--font-size-big);
 }
 .fb footer div {
   text-align: center;
@@ -116,6 +121,7 @@ header .source {
   position: absolute;
   width: 100%;
   bottom: var(--footer-height);
+  margin-bottom: var(--small);
   color: var(--white);
 }
 #logo img {
@@ -146,9 +152,9 @@ header .source {
 
 /*MAIN*/
 main {
-  margin: var(--x-large);
-  padding: var(--x-large) 0;
-  border: 1px solid var(--gray);
+  margin: var(--large);
+  padding: var(--large) 0;
+  border: 1px solid var(--black);
   border-radius: var(--medium);
   background: rgba(255,255,255, 0.6);
   position: relative;
@@ -187,7 +193,7 @@ main::before {
   position: absolute;
   left: calc( ( -1 * var(--x-large) - .4rem) );
   border-radius: 50%;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--black);
   background-position: 50%;
 }
 #legend .male::before {
@@ -202,13 +208,13 @@ main::before {
   align-items: center;
   width: 97%;
   margin: 0 auto var(--large);
-  border-right: 1px dashed var(--gray);
+  border-right: 1px dashed var(--black);
 }
 .icon {
   margin-right: var(--x-large);
   font-size: var(--font-size-big);
   color: var(--black);
-  width: var(--large);
+  width: var(--xx-large);
 }
 .charts {
   width: 100%;
@@ -216,15 +222,15 @@ main::before {
 }
 .chart {
   position: relative;
-  margin: 1px 0;
+  margin: 2px 0;
   height: 2rem;
   font-size: var(--font-size-big);
   line-height: 2rem;
   text-align: right;
   border-radius: var(--small);
   color: var(--white);
-  text-shadow: 0 0 var(--black);
-  border: 1px solid var(--gray);
+  text-shadow: 0 0 var(--gray);
+  border: 1px solid var(--black);
 }
 .chart:before {
   content: '';
@@ -254,10 +260,17 @@ main::before {
 .second:before {
   background-image: url('/imgs/female.png');
 }
+.chart.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+.chart.red {
+  background-color: var(--red);
+}
 
 .alert {
   position: absolute;
-  color: var(--orange);
+  color: var(--black);
   text-shadow: 0 0 var(--gray);
   max-width: 20rem;
   line-height: 100%;

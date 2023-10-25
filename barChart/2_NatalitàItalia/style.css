@@ -82,11 +82,12 @@ header div {
 }
 header div:first-child {
   margin-right: 3%;
-  width: 60%;
 }
 header img {
-  width: 100%;
+  width: 90%;
   border-radius: var(--medium);
+  border: 1px solid var(--white);
+  padding: var(--large)
 }
 header .source {
   font-style: italic;
@@ -107,6 +108,7 @@ header .source {
   border-top: 1px solid var(--gray);
   height: var(--footer-height);
   text-shadow: 0 1px var(--gray);
+  font-size: var(--font-size-big);
 }
 .fb footer div {
   text-align: center;
@@ -127,6 +129,7 @@ header .source {
   position: absolute;
   width: 100%;
   bottom: var(--footer-height);
+  margin-bottom: var(--small);
   color: var(--white);
 }
 #logo img {
