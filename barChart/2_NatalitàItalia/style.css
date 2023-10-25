@@ -1,7 +1,7 @@
 @import 'icons.css';
 
 :root {
-  --black: #333333;
+  --black: #222222;
   --white: #EEEEEE;
   --gray: #777777;
   --blue: #5180df;
@@ -17,7 +17,7 @@
   --font-size-bigger: 3rem;
   --font-size-big: 1.4rem;
   --font-size-small: .75rem;
-  --first-color: #062c77;
+  --first-color: #db700c;
   --second-color: #da3969;
 }
 
@@ -66,6 +66,10 @@ li {
   margin: var(--large) 0;
 }
 
+a {
+  color: inherit;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -73,9 +77,16 @@ header {
   padding: var(--large);
   text-shadow: 0 1px var(--gray);
 }
+header div {
+  width: 50%;
+}
+header div:first-child {
+  margin-right: 3%;
+  width: 60%;
+}
 header img {
-  width: 40%;
-  margin-right: 5%;
+  width: 100%;
+  border-radius: var(--medium);
 }
 header .source {
   font-style: italic;
@@ -146,9 +157,9 @@ header .source {
 
 /*MAIN*/
 main {
-  margin: var(--x-large);
-  padding: var(--x-large) 0;
-  border: 1px solid var(--gray);
+  margin: var(--large);
+  padding: var(--large) 0;
+  border: 1px solid var(--black);
   border-radius: var(--medium);
   background: rgba(255,255,255, 0.6);
   position: relative;
@@ -159,11 +170,11 @@ main::before {
   width: 100%;
   height: 100%;
   top: 0;
-  background-image: url('./img/chart-bg-1.png');
+  background-image: url('./img/italy.png');
   background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: 93% 93%;
-  opacity: .5;
+  background-size: 50%;
+  background-position: 100% 80%;
+  opacity: .25;
   position: absolute;
 }
 #legend {
@@ -201,12 +212,12 @@ main::before {
   display: flex;
   align-items: center;
   width: 97%;
-  margin: 0 auto var(--large);
-  border-right: 1px dashed var(--gray);
+  margin: 0 auto 7px;
+  border-right: 1px dashed var(--black);
 }
 .icon {
   margin-right: var(--x-large);
-  font-size: var(--font-size-big);
+  /*font-size: var(--font-size-big);*/
   color: var(--black);
   width: var(--large);
 }
@@ -217,17 +228,24 @@ main::before {
 .chart {
   position: relative;
   margin: 1px 0;
-  height: 2rem;
-  font-size: var(--font-size-big);
-  line-height: 2rem;
+  height: 1.2rem;
+  /*font-size: var(--font-size-small);*/
+  line-height: 1.2rem;
   text-align: right;
   border-radius: var(--small);
-  color: var(--white);
+  color: var(--black);
   text-shadow: 0 0 var(--black);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--black);
+}
+.chart.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+.chart.red {
+  background-color: var(--red);
 }
 .chart:before {
-  content: '';
+  /*content: '';*/
   width: var(--x-large);
   height: var(--x-large);
   background-repeat: no-repeat;
@@ -257,50 +275,99 @@ main::before {
 
 .alert {
   position: absolute;
-  color: var(--orange);
+  color: var(--black);
+  font-size: var(--font-size-small);
   text-shadow: 0 0 var(--gray);
-  max-width: 20rem;
+  max-width: 25rem;
   line-height: 100%;
 }
 .alert::before {
   content: '\21B6';
+  margin-right: 5px;
   font-size: var(--font-size-big);
   transform: rotate(39deg);
   display: inline-block;
 }
 .alert.alpha {
-  top: 55%;
-  left: 12%;
+  top: 13%;
+  left: 58%;
+}
+.alert.beta {
+  top: 16%;
+  left: 41%;
 }
 
 
-.y-1992 .first {
-  width: 98.75%;
+.y-1999 .first {
+  width: 53.7242%
 }
-.y-1992 .second {
-  width: 16%;
+.y-1999 .second {
+  width: 100%;
 }
-.y-1993 .first {
-  width: 58.5%;
+
+.y-2000 .first {
+  width: 54.3039%
 }
-.y-1993 .second {
-  width: 16.25%;
+.y-2001 .first {
+  width: 53.5282%
 }
-.y-1994 .first {
-  width: 38%;
+.y-2002 .first {
+  width: 53.8198%
 }
-.y-1994 .second {
-  width: 11.25%;
+.y-2003 .first {
+  width: 54.4063%
 }
-.y-1995 .first {
-  width: 23.75%;
+.y-2004 .first {
+  width: 56.2599%
 }
-.y-1995 .second {
-  width: 11.75%;
+.y-2005 .first {
+  width: 55.4022%
 }
-.y-1996 .first {
-  width: 14%;
+.y-2006 .first {
+  width: 56.001%
 }
-.y-1996 .second {
-  width: 7.5%;
+.y-2007 .first {
+  width: 56.3933%
+}
+.y-2008 .first {
+  width: 57.6659%
+}
+.y-2009 .first {
+  width: 56.8857%
+}
+.y-2010 .first {
+  width: 56.1944%
+}
+.y-2011 .first {
+  width: 54.6585%
+}
+.y-2012 .first {
+  width: 53.4186%
+}
+.y-2013 .first {
+  width: 51.4308%
+}
+.y-2014 .first {
+  width: 50.2596%
+}
+.y-2015 .first {
+  width: 48.578%
+}
+.y-2016 .first {
+  width: 47.3438%
+}
+.y-2017 .first {
+  width: 45.8151%
+}
+.y-2018 .first {
+  width: 43.9747%
+}
+.y-2019 .first {
+  width: 42.0084%
+}
+.y-2020 .first {
+  width: 40.4892%
+}
+.y-2021 .first {
+  width: 40.0249%
 }
