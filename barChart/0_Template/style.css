@@ -2,23 +2,27 @@
 
 :root {
   --black: #222222;
-  --white: #EEEEEE;
   --gray: #777777;
+  --white: #EEEEEE;
   --blue: #5180df;
   --red: #dd2e2e;
   --orange: #db700c;
   --green: #3b6936;
+
   --footer: #255877;
-  --footer-height: 2rem;
+  --footer-height: 2.4rem;
+
   --small: .3rem;
   --medium: .7rem;
   --large: 1rem;
   --x-large: 2rem;
+
   --font-size-bigger: 3rem;
   --font-size-big: 1.4rem;
   --font-size-small: .75rem;
-  --first-color: #db700c;
-  --second-color: #da3969;
+
+  --first-color: var(--blue);
+  --second-color: var(--orange);
 }
 
 html {
@@ -31,7 +35,7 @@ body {
   margin: 0;
   color: var(--black);
   width: 100%;
-  background-image: url('/imgs/bg2.png');
+  background-image: url('/imgs/bgs/bg2.png');
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: cover;
@@ -48,7 +52,11 @@ h1 {
   font-size: var(--font-size-bigger);
   font-family: 'Arvo', serif;
   line-height: 100%;
-  margin: var(--large) 0;
+  margin: 0;
+  text-shadow: 0 2px var(--white);
+}
+h2 {
+  margin: 0;
 }
 
 small {
@@ -80,6 +88,9 @@ header {
 header img {
   width: 40%;
   margin-right: 5%;
+  padding: var(--large);
+  border: 1px solid var(--black);
+  border-radius: var(--medium);
 }
 header .source {
   font-style: italic;
@@ -99,7 +110,7 @@ header .source {
   color: var(--white);
   border-top: 1px solid var(--gray);
   height: var(--footer-height);
-  text-shadow: 0 1px var(--gray);
+  text-shadow: 0 1px var(--black);
   font-size: var(--font-size-big);
 }
 .fb footer div {
@@ -108,7 +119,8 @@ header .source {
 }
 .fb footer span {
   color: var(--red);
-  font-weight: 700;
+  font-size: 2.3rem;
+  vertical-align: middle;
 }
 .in footer {
   display: none;
@@ -126,7 +138,7 @@ header .source {
 }
 #logo img {
   height: var(--x-large);
-  border: 1px solid var(--gray);
+  border: 1px solid var(--white);
   border-radius: 50%;
   padding: 3px;
   margin: var(--small) var(--small) var(--small) 0;
@@ -197,10 +209,10 @@ main::before {
   background-position: 50%;
 }
 #legend .male::before {
-  background-image: url('/imgs/male.png');
+  background-image: url('/imgs/icons/male.png');
 }
 #legend .female::before {
-  background-image: url('/imgs/female.png');
+  background-image: url('/imgs/icons/female.png');
 }
 
 .wrap {
@@ -215,6 +227,7 @@ main::before {
   font-size: var(--font-size-big);
   color: var(--black);
   width: var(--xx-large);
+  font-weight: 500;
 }
 .charts {
   width: 100%;
@@ -252,13 +265,13 @@ main::before {
   background-color: var(--first-color);
 }
 .first:before {
-  background-image: url('/imgs/male.png');
+  background-image: url('/imgs/icons/male.png');
 }
 .second {
   background-color: var(--second-color);
 }
 .second:before {
-  background-image: url('/imgs/female.png');
+  background-image: url('/imgs/icons/female.png');
 }
 .chart.green {
   background-color: var(--green);
