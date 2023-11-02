@@ -1,0 +1,405 @@
+@import 'icons.css';
+
+:root {
+  --black: #222222;
+  --white: #EEEEEE;
+  --gray: #777777;
+  --blue: #2968e6;
+  --red: #dd2e2e;
+  --orange: #df710a;
+  --green: #3b6936;
+  --footer: #255877;
+  --footer-height: 2rem;
+  --small: .3rem;
+  --medium: .7rem;
+  --large: 1rem;
+  --x-large: 2rem;
+  --font-size-bigger: 3.2rem;
+  --font-size-big: 1.4rem;
+  --font-size-small: .75rem;
+  --first-color: #db700c;
+  --second-color: #da3969;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--black);
+  width: 100%;
+  background-image: url('/imgs/bg2.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  position: relative;
+}
+body.fb {
+  height: 1350px;
+}
+body.in {
+  height: 1080px;
+}
+
+h1 {
+  font-size: var(--font-size-bigger);
+  font-family: 'Black Ops One', sans-serif;
+  line-height: 100%;
+  margin: var(--large) 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-shadow: 0 1px var(--white);
+}
+h2 {
+  font-family: 'Black Ops One', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  display: block;
+  font-size: var(--font-size-small);
+  font-weight: normal;
+}
+
+em {
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: .5rem 0;
+}
+
+li {
+  list-style-type: none;
+  margin: var(--large) 0;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--large);
+  text-shadow: 0 1px var(--gray);
+}
+header img {
+  width: 100%;
+  margin-right: 2%;
+}
+header .source {
+  font-style: italic;
+}
+
+.fb footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--large);
+  left: 0;
+  right: 0;
+  font-weight: 500;
+  background-color: var(--footer);
+  color: var(--white);
+  border-top: 1px solid var(--gray);
+  height: var(--footer-height);
+  text-shadow: 0 1px var(--gray);
+  font-size: var(--font-size-big);
+}
+.fb footer div {
+  text-align: center;
+  width: 33.33%;
+  text-shadow: 0 1px black;
+}
+.fb footer span {
+  color: var(--red);
+  font-weight: 700;
+}
+.in footer {
+  display: none;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-big);
+  position: absolute;
+  width: 100%;
+  bottom: var(--footer-height);
+  margin-bottom: var(--small);
+  color: var(--white);
+  text-shadow: 0 1px var(--gray);
+}
+#logo img {
+  height: var(--x-large);
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  padding: 3px;
+  margin: var(--small) var(--small) var(--small) 0;
+}
+
+.in div.followInsta {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  margin-right: var(--large);
+}
+.in div.followInsta span {
+  color: var(--red);
+  transform: rotate(39deg);
+  font-size: var(--font-size-big);
+}
+.fb div.followInsta {
+  display: none;
+}
+
+
+
+
+/*MAIN*/
+main {
+  margin: var(--large);
+  padding: var(--large) 0;
+  border: 1px solid var(--black);
+  border-radius: var(--medium);
+  background: rgba(255,255,255, 0.5);
+  position: relative;
+}
+main::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url('./img/chart-bg-1.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 120% 90%;
+  opacity: .5;
+  position: absolute;
+}
+#legend {
+  position: absolute;
+  right: 22%;
+  top: 80%;
+  font-weight: 500;
+  font-size: var(--font-size-big);
+}
+#legend div {
+  position: relative;
+}
+#legend div::before {
+  content: '';
+  width: var(--x-large);
+  height: var(--x-large);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  display: inline-block;
+  background-color: #FFF;
+  position: absolute;
+  left: calc( ( -1 * var(--x-large) - .4rem) );
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  background-position: 50%;
+}
+#legend .male::before {
+  background-image: url('/imgs/male.png');
+}
+#legend .female::before {
+  background-image: url('/imgs/female.png');
+}
+
+.wrap {
+  /*display: flex;*/
+  align-items: center;
+  width: 97%;
+  margin: 0 auto var(--large);
+  border-right: 1px dashed var(--black);
+}
+.icon {
+  margin-right: var(--x-large);
+  font-size: var(--font-size-big);
+  color: var(--black);
+  width: var(--xx-large);
+  text-shadow: 0 1px var(--white);
+}
+.charts {
+  width: 100%;
+  position: relative;
+}
+.chart {
+  position: relative;
+  margin: 2px 0;
+  height: 2rem;
+  font-size: var(--font-size-big);
+  line-height: 2rem;
+  text-align: right;
+  border-radius: var(--small);
+  color: var(--white);
+  text-shadow: 0 0 var(--gray);
+  border: 1px solid var(--black);
+}
+.chart:before {
+  content: '';
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  display: inline-block;
+  position: absolute;
+  left: calc( -1 * (var(--x-large) / 2) );
+  border-radius: 50%;
+  padding: 0px;
+  background-position: 50%;
+  border: 4px solid var(--white);
+  top: -8px;
+}
+.first {
+  background-color: var(--blue);
+}
+/*.first:before {
+  background-image: url('/imgs/male.png');
+}*/
+.second {
+  background-color: var(--second-color);
+}
+.second:before {
+  background-image: url('/imgs/female.png');
+}
+.chart.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+.chart.red {
+  background-color: var(--red);
+}
+.chart.orange {
+  background-color: var(--orange);
+}
+
+.alert {
+  position: absolute;
+  color: var(--black);
+  text-shadow: 0 0 var(--gray);
+  max-width: 20rem;
+  line-height: 100%;
+}
+.alert::before {
+  content: '\21B6';
+  font-size: var(--font-size-big);
+  transform: rotate(39deg);
+  display: inline-block;
+}
+.alert.alpha {
+  top: 55%;
+  left: 12%;
+}
+
+
+.russia .chart {
+  width: 100%;
+}
+.russia .chart:before {
+  background-image: url('./img/flags/RUS.svg');
+}
+
+.usa .first {
+  width: 95.7%;
+}
+.usa .chart:before {
+  background-image: url('./img/flags/USA.svg');
+}
+.china .first {
+  width: 94.9%;
+}
+.china .chart:before {
+  background-image: url('./img/flags/CHN.svg');
+}
+.israel .first {
+  width: 92.5%;
+}
+.israel .chart:before {
+  background-image: url('./img/flags/ISR.svg');
+}
+.south-korea .first {
+  width: 81.1%;
+}
+.south-korea .chart:before {
+  background-image: url('./img/flags/KOR.svg');
+}
+.ukraine .first {
+  width: 73.6%;
+}
+.ukraine .chart:before {
+  background-image: url('./img/flags/UKR.svg');
+}
+.iran .first {
+  width: 72.8%;
+}
+.iran .chart:before {
+  background-image: url('./img/flags/IRN.svg');
+}
+.united-kingdom .first {
+  width: 70.4%;
+}
+.united-kingdom .chart:before {
+  background-image: url('./img/flags/GBR.svg');
+}
+.germany .first {
+  width: 63.0%;
+}
+.germany .chart:before {
+  background-image: url('./img/flags/DEU.svg');
+}
+.turkey .first {
+  width: 53.4%;
+}
+.turkey .chart:before {
+  background-image: url('./img/flags/TUR.svg');
+}
+.saudi-arabia .first {
+  width: 43.4%;
+}
+.saudi-arabia .chart:before {
+  background-image: url('./img/flags/SAU.svg');
+}
+.belarus .first {
+  width: 41.1%;
+}
+.belarus .chart:before {
+  background-image: url('./img/flags/BLR.svg');
+}
+.france .first {
+  width: 39.3%;
+}
+.france .chart:before {
+  background-image: url('./img/flags/FRA.svg');
+}
+.india .first {
+  width: 32.5%;
+}
+.india .chart:before {
+  background-image: url('./img/flags/IND.svg');
+}
+.japan .first {
+  width: 27.7%;
+}
+.japan .chart:before {
+  background-image: url('./img/flags/JPN.svg');
+}
+.egypt .first {
+  width: 21.5%;
+}
+.egypt .chart:before {
+  background-image: url('./img/flags/EGY.svg');
+}
