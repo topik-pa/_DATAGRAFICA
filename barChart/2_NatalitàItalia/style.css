@@ -14,7 +14,7 @@
   --medium: .7rem;
   --large: 1rem;
   --x-large: 2rem;
-  --font-size-bigger: 3rem;
+  --font-size-bigger: 2.4rem;
   --font-size-big: 1.4rem;
   --font-size-small: .75rem;
   --first-color: #db700c;
@@ -42,6 +42,7 @@ body.fb {
 }
 body.in {
   height: 1080px;
+  
 }
 
 h1 {
@@ -49,6 +50,9 @@ h1 {
   font-family: 'Arvo', serif;
   line-height: 100%;
   margin: var(--large) 0;
+}
+.in h1 {
+  font-size: var(--font-size-bigger);
 }
 
 small {
@@ -77,17 +81,19 @@ header {
   padding: var(--large);
   text-shadow: 0 1px var(--gray);
 }
+.in header {
+  padding-top: 0;
+}
 header div {
-  width: 50%;
+  width: 65%;
 }
 header div:first-child {
-  margin-right: 3%;
+  width: 25%;
 }
 header img {
-  width: 90%;
+  width: 100%;
   border-radius: var(--medium);
-  border: 1px solid var(--white);
-  padding: var(--large)
+  border: 1px solid var(--black);
 }
 header .source {
   font-style: italic;
@@ -131,6 +137,7 @@ header .source {
   bottom: var(--footer-height);
   margin-bottom: var(--small);
   color: var(--white);
+  bottom: -11px;
 }
 #logo img {
   height: var(--x-large);
@@ -166,6 +173,7 @@ main {
   border-radius: var(--medium);
   background: rgba(255,255,255, 0.6);
   position: relative;
+  margin-top: 0;
 }
 main::before {
   content: '';
@@ -231,7 +239,7 @@ main::before {
 .chart {
   position: relative;
   margin: 1px 0;
-  height: 1.2rem;
+  height: 1.1rem;
   /*font-size: var(--font-size-small);*/
   line-height: 1.2rem;
   text-align: right;
@@ -292,12 +300,68 @@ main::before {
   display: inline-block;
 }
 .alert.alpha {
-  top: 13%;
+  top: 16%;
   left: 58%;
 }
 .alert.beta {
   top: 16%;
   left: 41%;
+}
+.alert.gamma {
+  top: 16%;
+  left: 56%;
+}
+.alert.delta {
+  top: 16%;
+  left: 57%;
+}
+.alert.epsilon {
+  top: 16%;
+  left: 57%;
+}
+.alert.alpha::after {
+  content: '';
+  width: 2rem;
+  height: 3.6rem;
+  background-image: url('./img/iphone.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -20px;
+  right: -40px;
+}
+.alert.gamma::after {
+  content: '';
+  width: 2rem;
+  height: 3.6rem;
+  background-image: url('/imgs/socials/fb.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -9px;
+  right: -40px;
+}
+.alert.delta::after {
+  content: '';
+  width: 2rem;
+  height: 3.6rem;
+  background-image: url('/imgs/socials/twitter.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -9px;
+  right: -40px;
+}
+.alert.epsilon::after {
+  content: '';
+  width: 2rem;
+  height: 3.6rem;
+  background-image: url('/imgs/socials/instagram.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -9px;
+  right: -40px;
 }
 
 
