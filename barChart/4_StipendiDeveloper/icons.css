@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon/icomoon.eot?2vcfdy');
+  src:  url('./fonts/icomoon/icomoon.eot?2vcfdy#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon/icomoon.ttf?2vcfdy') format('truetype'),
+    url('./fonts/icomoon/icomoon.woff?2vcfdy') format('woff'),
+    url('./fonts/icomoon/icomoon.svg?2vcfdy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+
+.icon {
+  position: relative;
+  line-height: 1.2rem;
+}
+.icon::before {
+ content: '';
+ width: 1.7rem;
+ height: 1.7rem;
+ display: block;
+ position: absolute;
+ left: -2rem;
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.icon.html::before {
+  background-image: url('img/html.jpg');
+}
+.icon.css::before {
+  background-image: url('img/css.jpg');
+}
+.icon.js::before {
+  background-image: url('img/js.jpg');
+}
+.icon.angular::before {
+  background-image: url('img/angular.png');
+}
+.icon.node::before {
+  background-image: url('img/node.png');
+}
+.icon.react::before {
+  background-image: url('img/react.png');
+}
+.icon.vue::before {
+  background-image: url('img/vue.png');
+}
