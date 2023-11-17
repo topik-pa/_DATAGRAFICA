@@ -1,0 +1,348 @@
+@import 'icons.css';
+
+:root {
+  --black: #222222;
+  --gray: #777777;
+  --white: #EEEEEE;
+  --blue: #0038B8;
+  --red: #dd2e2e;
+  --orange: #db700c;
+  --green: #007B3C;
+
+  --footer: #255877;
+  --footer-height: 2.4rem;
+
+  --small: .3rem;
+  --medium: .7rem;
+  --large: 1rem;
+  --x-large: 2rem;
+
+  --font-size-bigger: 3rem;
+  --font-size-big: 1.4rem;
+  --font-size-small: .75rem;
+
+  --first-color: var(--green);
+  --second-color: var(--blue);
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+  width: 100%;
+  background-image: url('./img/Gaza.webp');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  position: relative;
+}
+body.fb {
+  height: 1350px;
+}
+body.in {
+  height: 1080px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -999;
+}
+
+h1 {
+  font-size: var(--font-size-bigger);
+  font-family: 'Arvo', serif;
+  line-height: 100%;
+  margin: 0;
+  text-shadow: 0 2px var(--white);
+  color: var(--black);
+}
+h2 {
+  margin: 0;
+  color: var(--white);
+  text-shadow: 0 2px var(--black);
+}
+h3 {
+  font-size: var(--font-size-bigger);
+  text-align: center;
+  text-shadow: 0 2px var(--white);
+}
+
+p {
+  text-shadow: 0 2px var(--black);
+  font-weight: 500;
+}
+
+small {
+  display: block;
+  font-size: 80%;
+  font-weight: normal;
+}
+
+em {
+  font-weight: 500;
+}
+
+li {
+  list-style-type: none;
+  margin: var(--large) 0;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--large);
+  text-shadow: 0 1px var(--gray);
+}
+header img {
+  width: 40%;
+  margin-right: 5%;
+  padding: var(--large);
+  border: 1px solid var(--white);
+  border-radius: var(--medium);
+}
+header .source {
+  font-style: italic;
+}
+
+.fb footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--large);
+  left: 0;
+  right: 0;
+  font-weight: 500;
+  background-color: var(--footer);
+  color: var(--white);
+  border-top: 1px solid var(--gray);
+  height: var(--footer-height);
+  text-shadow: 0 1px var(--black);
+  font-size: var(--font-size-big);
+}
+.fb footer div {
+  text-align: center;
+  width: 33.33%;
+}
+.fb footer span {
+  color: var(--red);
+  font-size: 2.3rem;
+  vertical-align: middle;
+}
+.in footer {
+  display: none;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-big);
+  position: absolute;
+  width: 100%;
+  bottom: var(--footer-height);
+  margin-bottom: var(--small);
+  color: var(--white);
+  text-shadow: 0 1px var(--gray);
+}
+#logo img {
+  height: var(--x-large);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  padding: 3px;
+  margin: var(--small) var(--small) var(--small) 0;
+}
+
+.in div.followInsta {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  margin-right: var(--large);
+}
+.in div.followInsta span {
+  color: var(--red);
+  transform: rotate(39deg);
+  font-size: var(--font-size-big);
+}
+.fb div.followInsta {
+  display: none;
+}
+
+
+
+
+/*MAIN*/
+main {
+  margin: var(--large);
+  padding: var(--large) 0;
+  border: 1px solid var(--black);
+  border-radius: var(--medium);
+  background: rgba(255,255,255, 0.8);
+  position: relative;
+}
+/*main::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url('./img/chart-bg-1.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 93% 93%;
+  opacity: .5;
+  position: absolute;
+}*/
+#legend {
+  position: absolute;
+  right: 22%;
+  top: 80%;
+  font-weight: 500;
+  font-size: var(--font-size-big);
+}
+#legend div {
+  position: relative;
+}
+#legend div::before {
+  content: '';
+  width: var(--x-large);
+  height: var(--x-large);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  display: inline-block;
+  background-color: #FFF;
+  position: absolute;
+  left: calc( ( -1 * var(--x-large) - .4rem) );
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  background-position: 50%;
+}
+#legend .palestinian::before {
+  background-image: url('/imgs/icons/male.png');
+}
+#legend .israeli::before {
+  background-image: url('/imgs/icons/female.png');
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  width: 97%;
+  margin: 0 auto var(--large);
+  border-right: 1px dashed var(--black);
+}
+.icon {
+  margin-right: var(--x-large);
+  font-size: var(--font-size-big);
+  color: var(--black);
+  width: var(--xx-large);
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+.charts {
+  width: 100%;
+  position: relative;
+  margin-left: 1rem;
+}
+.chart {
+  position: relative;
+  margin: 10px 0;
+  height: 2rem;
+  font-size: var(--font-size-big);
+  line-height: 2rem;
+  text-align: right;
+  border-radius: var(--small);
+  color: var(--white);
+  text-shadow: 0 0 var(--gray);
+  border: 1px solid var(--black);
+}
+.chart:before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: 160%;
+  display: inline-block;
+  background-color: var(--white);
+  position: absolute;
+  left: calc( -1 * (var(--x-large) / 2) );
+  border-radius: 50%;
+  padding: 0px;
+  border: 1px solid #333;
+  top: -1px;
+  background-position: 50%;
+}
+.chart.first:before {
+  background-position: 10% 50%;
+}
+.first {
+  background-color: var(--first-color);
+}
+.first:before {
+  background-image: url('/imgs/flags/PAL.gif');
+}
+.second {
+  background-color: var(--second-color);
+}
+.second:before {
+  background-image: url('/imgs/flags/ISR.svg');
+}
+.chart.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+.chart.red {
+  background-color: var(--red);
+}
+
+.alert {
+  position: absolute;
+  color: var(--black);
+  text-shadow: 0 0 var(--gray);
+  max-width: 20rem;
+  line-height: 100%;
+}
+.alert::before {
+  content: '\21B6';
+  font-size: var(--font-size-big);
+  transform: rotate(39deg);
+  display: inline-block;
+}
+.alert.alpha {
+  top: 55%;
+  left: 12%;
+}
+
+.dec .second:before { 
+  left: -2rem;
+}
+
+
+/* DATA */
+.dec .first {
+  width: 92.316%;
+}
+.dec .second {
+  width: 10.441%;
+}
+.fer .first {
+  width: 91.633%;
+}
+.fer .second {
+  width: 18%;
+}
